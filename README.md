@@ -37,5 +37,5 @@ The **user authentication and authorization** is a **Node.js** application built
 ## ⚡ Installation & Setup  
 ### 1️⃣ Clone the Repository  
 ```sh
-git clone https://github.com/yourusername/user-management-api.git
-cd user-management-api
+git clone https://github.com/Ram-india/jwt.git
+cd jwt
