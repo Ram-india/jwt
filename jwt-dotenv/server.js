@@ -2,6 +2,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const connectDB = require("./config/dbConfig");
 const authRoutes = require("./routes/authRoutes");
+//const errorHandler  = require("./middleware/errorMiddleware");
 
 require("dotenv").config();
 
@@ -14,7 +15,9 @@ app.use(bodyParser.json());
 connectDB();
 
 //Routes
-app.use("/api/users", authRoutes)
+app.use("/api/users", authRoutes);
+
+//app.use(errorHandler);
 
 const PORT = process.env.PORT || 3000;  
 
