@@ -1,0 +1,55 @@
+{
+	"info": {
+		"_postman_id": "4551a15c-a3ff-491e-bb15-f7f400d4938a",
+		"name": "User Authentication and Authorization",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "35985168"
+	},
+	"item": [
+		{
+			"name": "api-register-user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"ram2304\",\n    \"email\":\"ram@gmail.com\",\n    \"password\": \"ram@123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost: 3000/api/users/"
+			},
+			"response": []
+		},
+		{
+			"name": "api-login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"ram@gmail.com\",\n    \"password\":\"ram@123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost: 3000/api/users/login"
+			},
+			"response": []
+		},
+		{
+			"name": "api-get-user-info",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost: 1500/api/users/user"
+			},
+			"response": []
+		}
+	]
+}
